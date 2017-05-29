@@ -22,6 +22,7 @@ The goals / steps of this project are the following:
 [image4]: ./output_images/warped_straight_lines.png "Warp Example"
 [image5]: ./output_images/color_fit_lines.jpg "Fit Visual"
 [image6]: ./output_images/example_output.jpg "Output"
+[image7]: ./output_images/formula1.jpg "radius of curvature"
 [video1]: ./project_video.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -81,7 +82,7 @@ Then I did peak detection of histogram of binary image and sliding window to ide
 ![alt text][image5]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
-
+To calculate the curvature, I use the formula from the course, which is ![alt text][image7].
 I did this in the 7th and 8th code cells of the IPython notebook.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
