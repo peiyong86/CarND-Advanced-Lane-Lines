@@ -83,6 +83,9 @@ Then I did peak detection of histogram of binary image and sliding window to ide
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 To calculate the curvature, I use the formula from the course, which is ![alt text][image7].
+
+To calculate the position of the vehicle with respect to center, I use the fitted polynomial curve's lower end points ( when y equals to 720). I calculated the mid-point of lower end points, and the calculate the distance between the mid-point and the center of x-axis of image.
+
 I did this in the 7th and 8th code cells of the IPython notebook.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
