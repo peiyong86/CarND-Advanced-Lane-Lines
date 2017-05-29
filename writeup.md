@@ -1,5 +1,4 @@
-## Writeup Template
-
+## Writeup
 ---
 
 **Advanced Lane Finding Project**
