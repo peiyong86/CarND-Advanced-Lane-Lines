@@ -109,7 +109,5 @@ Here's a [link to my video result](./project_video_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Sometimes land line does not appear on the road, that will cause a fault, such as:
-![alt_text][image8]
-
+Sometimes land line does not appear on the road, that will cause a fault.
 So I use a bi-direction sliding window search, find lane-line pixels from up-down and down-up directions, which makes result looks better.
