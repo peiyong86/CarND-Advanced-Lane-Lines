@@ -23,6 +23,7 @@ The goals / steps of this project are the following:
 [image5]: ./output_images/color_fit_lines.jpg "Fit Visual"
 [image6]: ./output_images/example_output.jpg "Output"
 [image7]: ./output_images/formula1.jpg "radius of curvature"
+[image8]: ./output_images/fault1.jpg "fault"
 [video1]: ./project_video.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -108,4 +109,7 @@ Here's a [link to my video result](./project_video_output.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+Sometimes land line does not appear on the road, that will cause a fault, such as:
+![alt_text][image8]
+
+So I use a bi-direction sliding window search, find lane-line pixels from up-down and down-up directions, which makes result looks better.
