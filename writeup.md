@@ -111,3 +111,6 @@ Here's a [link to my video result](./project_video_output.mp4)
 
 Sometimes land line does not appear on the road, that will cause a fault.
 So I use a bi-direction sliding window search, find lane-line pixels from up-down and down-up directions, which makes result looks better.
+I also check the difference between left curve and right curve, if the difference beyond certain threshold, then I assume some fault is happed and discard the result.
+
+To make curvature and distance to center more accurate and smooth, I use a average value of last 3 frames and discard the outliners.
